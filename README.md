@@ -31,12 +31,14 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
 
  The output file (Ordered_MeanSubjectActivity.csv) consists of the following:
+ 
       - An identifier of the subject who participated in the experiment.
       - Its activity label. 
       - A 180 - feature vector with means and STD of measurements from the 
       gyroscope and accelerometer. 
 
-    **Notes:** 
+**Notes:** 
+
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
@@ -71,17 +73,19 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
     These measurements were then averaged for each subject over a given activity.
 
 
-    Units:
+**Units:**
       Frequency is measured in Hz
       Accelerometer is measured in g (m/s^2)
       Gyroscope is measured in radians/second
       
     Each column was labeled accordingly:
 
-    **Subject [integer]:**
+**Subject [integer]:**
+
       1-30
 
-   **Activity [character]:**
+**Activity [character]:**
+
       walking
       walking upstairs
       walking downstairs
@@ -89,7 +93,8 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       standing
       laying
     
-    **Means and STD of each of the following measurements (68 total) [numeric]:**
+**Means and STD of each of the following measurements (68 total) [numeric]:**
+
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Y
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Z
