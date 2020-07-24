@@ -1,6 +1,6 @@
-###=============================================================================
-###=============================================================================
-###=============================================================================
+################################################################################
+################################################################################
+################################################################################
 ###   
 ###   Coursera Course - Getting and CLeaning Data - Course Assignment
 ###   By: John Costa
@@ -9,26 +9,26 @@
 ###   Source data provided by Davide Anguita, Alessandro Ghio, Luca Oneto, 
 ###   Xavier Parra and Jorge L. Reyes-Ortiz [1]
 ###   
-###=============================================================================
-###=============================================================================
-###=============================================================================
+################################################################################
+################################################################################
+################################################################################
 
 
 
-================================================================================
+################################################################################
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
 Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
 Hardware-Friendly Support Vector Machine. International Workshop of Ambient 
 Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
-================================================================================
+################################################################################
 
 
 
-| =============
+| #############
 | Study Design:
-| =============
+| #############
 |
 | The experiments have been carried out with a group of 30 volunteers within an 
 | ago ago bracket of 19-48 years. Each person performed six activities (WALKING, 
@@ -57,16 +57,16 @@ Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
       - A 180 - feature vector with means and STD of measurements from the 
       gyroscope and accelerometer. 
 
-    ======
+    ######
     Notes: 
-    ======
+    ######
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
 
-|   =================================
+|   #################################
 |   Measurement (column) description: 
-|   =================================
+|   #################################
 |
 |   The measuremnts are average of the mean and standard deviation from from 
 |   various meansurments of a 3 axis the accelerometer and gyroscope. These 
@@ -183,17 +183,17 @@ Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
       MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeJerkMag.std
   
 
-    ======
+    ######
     Units:
-    ======
+    ######
 
       Frequency is measured in Hz
       Accelerometer is measured in g (m/s^2)
       Gyroscope is measured in radians/second
       
-================================================================================      
+################################################################################      
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
 Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
 Hardware-Friendly Support Vector Machine. International Workshop of Ambient 
 Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
-================================================================================
+################################################################################
