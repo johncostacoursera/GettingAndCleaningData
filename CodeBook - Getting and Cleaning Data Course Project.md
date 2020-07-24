@@ -43,9 +43,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
     "UCI HAR Dataset/data". Inertial Signals was ignored for Test and Train.
 
     
-***Units:***
-    
-
+Units
       Frequency is measured in Hz
       Accelerometer is measured in g (m/s^2)
       Gyroscope is measured in radians/second
@@ -98,12 +96,13 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
             :
             [180] MeanofSubjectActivity-<fieldname>std...
             
+Subject data was averaged for each subject across each activity for 
+every measurement using the _aggregate_ command where Subject and 
+Activity were used as input variables.
+
 **Note**: Variables with MeanFrequency were ignored
     
-          Subject data was averaged for each subject across each activity for 
-          every measurement using the _aggregate_ command where Subject and 
-          Activity were used as input variables.
-
+          
 ###    STEP 4.    Export / Save
           Data was saved to file (Ordered_MeanSubjectActivity.csv) using 
           _write.table_.
@@ -122,7 +121,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
->###Measurement (column) description: 
+###Measurement (column) description: 
 
 >    The measuremnts are average of the mean and standard deviation from from 
     various meansurments of a 3 axis the accelerometer and gyroscope. These 
@@ -160,84 +159,84 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
 ###Each column was labeled accordingly:
 
 ***Subject [integer]:***
-      1-30
+      -1-30
 
 ***Activity [character]:***
-      walking
-      walking upstairs
-      walking downstairs
-      sitting
-      standing
-      laying
+      -walking
+      -walking upstairs
+      -walking downstairs
+      -sitting
+      -standing
+      -laying
     
 ***Means and STD of each of the following measurements (68 total) [numeric]:***
-      MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
-      MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Y
-      MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Z
-      MeanOfSubjectActivity-TimeBodyAccelerometer.std.X
-      MeanOfSubjectActivity-TimeBodyAccelerometer.std.Y
-      MeanOfSubjectActivity-TimeBodyAccelerometer.std.Z
-      MeanOfSubjectActivity-TimeGravityAccelerometer.mean.X
-      MeanOfSubjectActivity-TimeGravityAccelerometer.mean.Y
-      MeanOfSubjectActivity-TimeGravityAccelerometer.mean.Z
-      MeanOfSubjectActivity-TimeGravityAccelerometer.std.X
-      MeanOfSubjectActivity-TimeGravityAccelerometer.std.Y
-      MeanOfSubjectActivity-TimeGravityAccelerometer.std.Z
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.X
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.Y
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.Z
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.X
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.Y
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.Z
-      MeanOfSubjectActivity-TimeBodyGyroscope.mean.X
-      MeanOfSubjectActivity-TimeBodyGyroscope.mean.Y
-      MeanOfSubjectActivity-TimeBodyGyroscope.mean.Z
-      MeanOfSubjectActivity-TimeBodyGyroscope.std.X
-      MeanOfSubjectActivity-TimeBodyGyroscope.std.Y
-      MeanOfSubjectActivity-TimeBodyGyroscope.std.Z
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.X
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.Y
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.Z
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.X
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.Y
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.Z
-      MeanOfSubjectActivity-TimeBodyAccelerometerMag.mean
-      MeanOfSubjectActivity-TimeBodyAccelerometerMag.std
-      MeanOfSubjectActivity-TimeGravityAccelerometerMag.mean
-      MeanOfSubjectActivity-TimeGravityAccelerometerMag.std
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerkMag.mean
-      MeanOfSubjectActivity-TimeBodyAccelerometerJerkMag.std
-      MeanOfSubjectActivity-TimeBodyGyroscopeMag.mean
-      MeanOfSubjectActivity-TimeBodyGyroscopeMag.std
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerkMag.mean
-      MeanOfSubjectActivity-TimeBodyGyroscopeJerkMag.std
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.X
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.Y
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.Z
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.X
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.Y
-      MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.Z
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.X
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.Y
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.Z
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.X
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.Y
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.Z
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.X
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.Y
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.Z
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.std.X
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.std.Y
-      MeanOfSubjectActivity-FrequencyBodyGyroscope.std.Z
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerMag.mean
-      MeanOfSubjectActivity-FrequencyBodyAccelerometerMag.std
-      MeanOfSubjectActivity-FrequencyBodyBodyAccelerometerJerkMag.mean
-      MeanOfSubjectActivity-FrequencyBodyBodyAccelerometerJerkMag.std
-      MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeMag.mean
-      MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeMag.std
-      MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeJerkMag.mean
-      MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeJerkMag.std
-  
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Y
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Z
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.std.X
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.std.Y
+      -MeanOfSubjectActivity-TimeBodyAccelerometer.std.Z
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.mean.X
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.mean.Y
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.mean.Z
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.std.X
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.std.Y
+      -MeanOfSubjectActivity-TimeGravityAccelerometer.std.Z
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.X
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.Y
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.mean.Z
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.X
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.Y
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerk.std.Z
+      -MeanOfSubjectActivity-TimeBodyGyroscope.mean.X
+      -MeanOfSubjectActivity-TimeBodyGyroscope.mean.Y
+      -MeanOfSubjectActivity-TimeBodyGyroscope.mean.Z
+      -MeanOfSubjectActivity-TimeBodyGyroscope.std.X
+      -MeanOfSubjectActivity-TimeBodyGyroscope.std.Y
+      -MeanOfSubjectActivity-TimeBodyGyroscope.std.Z
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.X
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.Y
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.mean.Z
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.X
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.Y
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerk.std.Z
+      -MeanOfSubjectActivity-TimeBodyAccelerometerMag.mean
+      -MeanOfSubjectActivity-TimeBodyAccelerometerMag.std
+      -MeanOfSubjectActivity-TimeGravityAccelerometerMag.mean
+      -MeanOfSubjectActivity-TimeGravityAccelerometerMag.std
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerkMag.mean
+      -MeanOfSubjectActivity-TimeBodyAccelerometerJerkMag.std
+      -MeanOfSubjectActivity-TimeBodyGyroscopeMag.mean
+      -MeanOfSubjectActivity-TimeBodyGyroscopeMag.std
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerkMag.mean
+      -MeanOfSubjectActivity-TimeBodyGyroscopeJerkMag.std
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.X
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.Y
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.mean.Z
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.X
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.Y
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometer.std.Z
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.X
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.Y
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.mean.Z
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.X
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.Y
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerJerk.std.Z
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.X
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.Y
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.mean.Z
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.std.X
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.std.Y
+      -MeanOfSubjectActivity-FrequencyBodyGyroscope.std.Z
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerMag.mean
+      -MeanOfSubjectActivity-FrequencyBodyAccelerometerMag.std
+      -MeanOfSubjectActivity-FrequencyBodyBodyAccelerometerJerkMag.mean
+      -MeanOfSubjectActivity-FrequencyBodyBodyAccelerometerJerkMag.std
+      -MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeMag.mean
+      -MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeMag.std
+      -MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeJerkMag.mean
+      -MeanOfSubjectActivity-FrequencyBodyBodyGyroscopeJerkMag.std
+
 
     
 ### Units:
