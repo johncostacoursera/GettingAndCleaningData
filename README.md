@@ -65,12 +65,11 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
    fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain 
    signals). 
 
-    These signals were used to estimate variables of the feature vector for 
-    each pattern:  
+These signals were used to estimate variables of the feature vector for each pattern:  
 
-    '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-    These measurements were then averaged for each subject over a given activity.
+These measurements were then averaged for each subject over a given activity.
 
 
 **Units:**
@@ -78,7 +77,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       Accelerometer is measured in g (m/s^2)
       Gyroscope is measured in radians/second
       
-    Each column was labeled accordingly:
+###Each column was labeled accordingly:###
 
 **Subject [integer]:**
 
