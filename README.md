@@ -1,6 +1,6 @@
 #   Coursera Course - Getting and CLeaning Data - Course Assignment
-#   By: John Costa
-#   Date: July 23, 2020
+###   By: John Costa
+###   Date: July 23, 2020
 Source data provided by Davide Anguita, Alessandro Ghio, Luca Oneto, 
 Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
@@ -27,13 +27,13 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
  'features_info.txt' for more details. 
 
 
-    The output file (Ordered_MeanSubjectActivity.csv) consists of the following:
+> The output file (Ordered_MeanSubjectActivity.csv) consists of the following:
       - An identifier of the subject who participated in the experiment.
       - Its activity label. 
       - A 180 - feature vector with means and STD of measurements from the 
       gyroscope and accelerometer. 
 
-    ****Notes:*** 
+    ***Notes:*** 
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
@@ -162,7 +162,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       Gyroscope is measured in radians/second
       
 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
+>[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. 
 Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
 Hardware-Friendly Support Vector Machine. International Workshop of Ambient 
 Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
