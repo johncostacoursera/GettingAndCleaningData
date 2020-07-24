@@ -43,7 +43,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
     "UCI HAR Dataset/data". Inertial Signals was ignored for Test and Train.
 
     
-    Units:
+***Units:***
     
 
       Frequency is measured in Hz
@@ -98,7 +98,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
             :
             [180] MeanofSubjectActivity-<fieldname>std...
             
-          **Note**: Variables with MeanFrequency were ignored
+**Note**: Variables with MeanFrequency were ignored
     
           Subject data was averaged for each subject across each activity for 
           every measurement using the _aggregate_ command where Subject and 
@@ -118,11 +118,11 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       - A 180 - feature vector with means and STD of measurements from the 
       gyroscope and accelerometer. 
 
-    **Notes**: 
+**Note:**
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
-    Measurement (column) description: 
+>###Measurement (column) description: 
 
 >    The measuremnts are average of the mean and standard deviation from from 
     various meansurments of a 3 axis the accelerometer and gyroscope. These 
@@ -151,18 +151,18 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
 >    These measurements were then averaged for each subject over a given activity.
 
-    Units
+###Units
       Frequency is measured in Hz
       Accelerometer, Jerk are measured in m/s^2
       Gyroscope is measured in radians/second
 
 
-    Each column was labeled accordingly:
+###Each column was labeled accordingly:
 
-    Subject [integer]:
+***Subject [integer]:***
       1-30
 
-    Activity [character]:
+***Activity [character]:***
       walking
       walking upstairs
       walking downstairs
@@ -170,7 +170,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       standing
       laying
     
-    Means and STD of each of the following measurements (68 total) [numeric]:
+***Means and STD of each of the following measurements (68 total) [numeric]:***
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Y
       MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Z
