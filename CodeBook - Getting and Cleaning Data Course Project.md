@@ -1,11 +1,13 @@
-#   Coursera Course - Getting and CLeaning Data - Course Assignment
+#   Coursera Course - Getting and Cleaning Data - Course Assignment
 ###   By: John Costa
 ###   Date: July 23, 2020
+
+
 Source data provided by Davide Anguita, Alessandro Ghio, Luca Oneto, 
 Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
  
- ##Study Design:
+## Study Design:
  
 
 >The experiments have been carried out with a group of 30 volunteers within an 
@@ -28,10 +30,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
  obtained by calculating variables from the time and frequency domain. See 
  'features_info.txt' for more details. 
 
-
-
-
-##INPUT - Source Data:
+## INPUT - Source Data:
 
     Data was provided for the course Getting and CLeaning Data course week 4 
     assignment. See "UCI HAR Dataset".
@@ -51,17 +50,13 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       Accelerometer is measured in g (m/s^2)
       Gyroscope is measured in radians/second
 
-
-
-##PROCESS:
+## PROCESS:
 
 
     The data was cleaned using the script "run_analysis.R"" in the following 
     stages:
 
-
-
-###    STEP 1. Load and clean labels and variable names into human readable format
+###    STEP 1.    Load and clean labels and variable names into human readable format
 
         Field names were converted as follows
           t -> time
@@ -82,12 +77,12 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
     
         Moved all field and labels to lower case
       
-###   STEP 2. Assemble complete data set
+###   STEP 2.     Assemble complete data set
         Combine Training and Test dataset into a single table consisting of 
         563 fields and 10,299 records using the labels and names modified above.
         Clean up field names as needed to Tidy Data standards.
     
-###   STEP 3. Extract data of interest
+###   STEP 3.     Extract data of interest
           Extract field names that are the mean and std for each measurment for 
           each activity by subject and calculate the mean of these measurements 
           (using  arrange) for each subject, for each activity type. The outcome
@@ -103,18 +98,17 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
             
           **Note**: Variables with MeanFrequency were ignored
     
-###    STEP 4. Simplify 
+###    STEP 4.    Simplify 
           Subject data was averaged for each subject across each activity for 
           every measurement using the aggregate command where Subject and 
           Activity were used as input variables.
 
-###    STEP 5. Export / Save
+###    STEP 5.    Export / Save
           Data was saved to file (Ordered_MeanSubjectActivity.csv)
 
 
 
-##OUTPUT (Ordered_MeanSubjectActivity.csv):
-
+## OUTPUT (Ordered_MeanSubjectActivity.csv):
 
     The output file (Ordered_MeanSubjectActivity.csv) consists of the following:
       - An identifier of the subject who participated in the experiment.
@@ -122,16 +116,11 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
       - A 180 - feature vector with means and STD of measurements from the 
       gyroscope and accelerometer. 
 
-    
     **Notes**: 
-    
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
-
-    
     Measurement (column) description: 
-    
 
 >    The measuremnts are average of the mean and standard deviation from from 
     various meansurments of a 3 axis the accelerometer and gyroscope. These 
@@ -160,10 +149,10 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
 >    These measurements were then averaged for each subject over a given activity.
 
-
     Units
       Frequency is measured in Hz
       Accelerometer, Jerk are measured in m/s^2
+      Gyroscope is measured in radians/second
 
 
     Each column was labeled accordingly:
@@ -249,7 +238,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
   
 
     
-    ###Units:
+### Units:
     
       Frequency is measured in Hz
       Accelerometer, Jerk are measured in g (m/s^2)
