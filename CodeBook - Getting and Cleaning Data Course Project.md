@@ -121,7 +121,7 @@ Activity were used as input variables.
     - Each row represents the averaged measurement of each activity for each 
     subject over multiple observations.
 
-###Measurement (column) description: 
+### Measurement (column) description: 
 
     The measuremnts are average of the mean and standard deviation from from 
     various meansurments of a 3 axis the accelerometer and gyroscope. These 
@@ -159,15 +159,15 @@ Activity were used as input variables.
 ###Each column was labeled accordingly:
 
 ***Subject [integer]:***
-      -1-30
+      - 1-30
 
 ***Activity [character]:***
-      -walking
-      -walking upstairs
-      -walking downstairs
-      -sitting
-      -standing
-      -laying
+      - walking
+      - walking upstairs
+      - walking downstairs
+      - sitting
+      - standing
+      - laying
     
 ***Means and STD of each of the following measurements (68 total) [numeric]:***
       -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
