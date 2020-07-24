@@ -1,8 +1,11 @@
-#   Coursera Course - Getting and CLeaning Data - Course Assignment
+#   Coursera Course - Getting and Cleaning Data - Course Assignment
 ###   By: John Costa
 ###   Date: July 23, 2020
+
+
 Source data provided by Davide Anguita, Alessandro Ghio, Luca Oneto, 
 Xavier Parra and Jorge L. Reyes-Ortiz [1]
+
 
 ## Study Design:
 

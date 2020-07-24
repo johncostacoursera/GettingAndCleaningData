@@ -58,7 +58,7 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
 
 ###    STEP 1.    Load and clean labels and variable names into human readable format
 
-        Field names were converted as follows
+        Field names were converted using _gsub_ as follows
           t -> time
           f -> frequency
           Acc -> Accelerometer
@@ -73,20 +73,22 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
           5 -> standing
           6 -> laying
       
-        Removed underscores
+        Removed underscores using _gsub_
     
-        Moved all field and labels to lower case
+        Moved all field and labels to lower case using _tolower_
       
 ###   STEP 2.     Assemble complete data set
-        Combine Training and Test dataset into a single table consisting of 
-        563 fields and 10,299 records using the labels and names modified above.
-        Clean up field names as needed to Tidy Data standards.
+        Combine Training and Test dataset using _cbind_ and _rbind_ into a single 
+        table consisting of 563 fields and 10,299 records using the labels and
+        names modified above. Clean up field names as needed to Tidy Data 
+        standards.
     
 ###   STEP 3.     Extract data of interest
           Extract field names that are the mean and std for each measurment for 
           each activity by subject and calculate the mean of these measurements 
-          (using  arrange) for each subject, for each activity type. The outcome
-          produces 180 records and 68 cols.
+          (using  _aggregate_) for each subject, for each activity type and then
+          arrange into the final format ordered by subject. The outcome produces
+          180 records and 68 cols.
           
           Feild names are as follows:
             [1] Subject
@@ -98,13 +100,13 @@ Xavier Parra and Jorge L. Reyes-Ortiz [1]
             
           **Note**: Variables with MeanFrequency were ignored
     
-###    STEP 4.    Simplify 
           Subject data was averaged for each subject across each activity for 
-          every measurement using the aggregate command where Subject and 
+          every measurement using the _aggregate_ command where Subject and 
           Activity were used as input variables.
 
-###    STEP 5.    Export / Save
-          Data was saved to file (Ordered_MeanSubjectActivity.csv)
+###    STEP 4.    Export / Save
+          Data was saved to file (Ordered_MeanSubjectActivity.csv) using 
+          _write.table_.
 
 
 
