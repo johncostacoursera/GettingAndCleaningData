@@ -150,18 +150,20 @@ Activity were used as input variables.
 
     These measurements were then averaged for each subject over a given activity.
 
-###Units
+### Units
       Frequency is measured in Hz
       Accelerometer, Jerk are measured in m/s^2
       Gyroscope is measured in radians/second
 
 
-###Each column was labeled accordingly:
+### Each column was labeled accordingly:
 
 ***Subject [integer]:***
+
       - 1-30
 
 ***Activity [character]:***
+
       - walking
       - walking upstairs
       - walking downstairs
@@ -170,6 +172,7 @@ Activity were used as input variables.
       - laying
     
 ***Means and STD of each of the following measurements (68 total) [numeric]:***
+
       -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.X
       -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Y
       -MeanOfSubjectActivity-TimeBodyAccelerometer.mean.Z
